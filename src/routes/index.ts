@@ -5,25 +5,23 @@ import HomePage from '../pages/Home';
 import QuizPage from '../pages/Quiz';
 import ResultPage from '../pages/Result';
 
-export function routes(): RouteObject[] {
-  return [
-    {
-      Component: Layout,
-      children: [
-        {
-          index: true,
-          path: '/',
-          Component: HomePage,
-        },
-        {
-          path: '/:idx',
-          Component: QuizPage,
-        },
-        {
-          path: '/result',
-          Component: ResultPage,
-        },
-      ],
-    },
-  ];
-}
+export const routes: RouteObject[] = [
+  {
+    Component: Layout,
+    children: [
+      {
+        index: true,
+        path: '/',
+        Component: HomePage,
+      },
+      {
+        path: '/:id',
+        Component: QuizPage,
+      },
+      {
+        path: '/result',
+        Component: ResultPage,
+      },
+    ],
+  },
+];
