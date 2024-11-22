@@ -14,7 +14,7 @@ interface Props {
  * @property {() => void} onClick 콜백 onClick
  */
 export default function Button({ className, children, disabled = false, onClick }: Props) {
-  const basicClassName = 'px-2 py-1 border border-black rounded-md text-sm';
+  const basicClassName = 'px-2 py-1 border border-black rounded-md text-sm disabled:opacity-30';
   const mergeClassName = twMerge(basicClassName, className);
 
   return (
