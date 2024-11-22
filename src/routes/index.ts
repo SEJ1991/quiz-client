@@ -16,7 +16,7 @@ export function routes(): RouteObject[] {
           Component: HomePage,
         },
         {
-          path: '/:id',
+          path: '/:idx',
           Component: QuizPage,
         },
         {
