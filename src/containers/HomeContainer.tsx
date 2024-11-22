@@ -25,7 +25,7 @@ export default function HomeContainer() {
       return;
     }
 
-    sessionStorage.setItem('quizess', JSON.stringify(data));
+    sessionStorage.setItem('quizess', JSON.stringify(data.results));
     navigate('/0');
   };
 
